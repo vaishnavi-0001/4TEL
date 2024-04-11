@@ -1,26 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>4 TEL</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="TEL">
-
+        <div class="timer-container">
+            <div id="countdown" class="countdown"></div>
+        </div>
+        <h1 class="tel-heading">4 T E L ' S<br>A U T O M A T I O N</h1>
         <video autoplay loop muted plays-inline class="background-frontpage">
             <source src="image\front_page_video.mp4" type="video/mp4">
         </video>
-
+        <div class="sidebar">
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div class="menu-bar"></div>
+                <div class="menu-bar"></div>
+                <div class="menu-bar"></div>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="#">Project/Gallery</a></li>
+                <li><a href="book_now.html">Book Now</a></li>
+                <li><a href="vehicle_detail.html">B2B Details</a></li>
+            </ul>
+        </div>
 
 
        <nav>
-        <img src="image\Ford_ecosport.jpg" class="logo">
+        <img src="image\logo.jpg" class="logo">
         <ul>
-            <li><a href="#">BOOK</a></li>
-            <li><a href="#">B2B DEALERSHIP</a></li>
-            <li><a href="#">Model Gallery</a></li>
-            <li><a href="#">FAQ</a></li>
+            
+            <li><a href="#">SEARCH</a></li>
+            <li><a href="#">COLLECTION</a></li>
         </ul>
        </nav>
 
@@ -29,5 +43,7 @@
         <a href="#">Explore</a>
        </div>
     </div>
+    <script src = "script.js"></script>
+    
 </body>
 </html>
