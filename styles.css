@@ -7,6 +7,59 @@
     
 }
 
+/* New styles for the 4TEL heading */
+.tel-heading {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+    z-index: 1000; /* Ensure it's above other elements */
+    text-align: center; /* Center the text */
+    line-height: 1.2; /
+}
+
+/* New styles for the timer */
+.timer-container {
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+}
+
+
+.countdown {
+    background-color:transparent;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    border: 4px solid #fff; /* Add outline */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1s ease;
+}
+
+
+
+/* Adjustments to make the timer circular */
+.countdown {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity is ease;
+}
+
 .TEL {
     width: 100%;
     height: 100vh;
@@ -99,3 +152,52 @@ nav ul li a{
         height: 100%;
     }
 }
+
+/* Existing styles */
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 100px;
+    left: 20px;
+    z-index: 1000; /* Ensure the sidebar appears above other content */
+}
+
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: none; /* Hide the menu by default */
+}
+
+
+.sidebar-menu.active {
+    display: block;
+}
+
+
+.sidebar-menu li {
+    margin-bottom: 10px;
+}
+
+.sidebar-menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 5px 10px; /* Adjust as needed for padding around the text */
+    display: block;
+}
+
