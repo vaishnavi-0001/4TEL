@@ -1,10 +1,12 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>4 TEL</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="{% static "CSS/styles.css" %}">
 </head>
 <body>
     <div class="TEL">
@@ -13,7 +15,7 @@
         </div>
         <h1 class="tel-heading">4 T E L ' S<br>A U T O M A T I O N</h1>
         <video autoplay loop muted plays-inline class="background-frontpage">
-            <source src="image\front_page_video.mp4" type="video/mp4">
+            <source src="{% static "Images/front-page-video_akImI6Y6.mp4" %}" type="video/mp4">
         </video>
         <div class="sidebar">
             <div class="menu-toggle" onclick="toggleMenu()">
@@ -30,7 +32,7 @@
 
 
        <nav>
-        <img src="image\logo.jpg" class="logo">
+        <img src="{% static "Images/logo-removebg-preview.png" %}" class="logo">
         <ul>
             
             <li><a href="#">SEARCH</a></li>
@@ -43,7 +45,7 @@
         <a href="#">Explore</a>
        </div>
     </div>
-    <script src = "script.js"></script>
+    <script src = "{% static "JS/script.js" %}"></script>
     
 </body>
 </html>
