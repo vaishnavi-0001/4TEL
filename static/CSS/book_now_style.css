@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
+     /* Add background image for the whole page */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Ensures the background image remains fixed while scrolling */
+    background-position: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 100px auto; /* Center the container */
+    background-color: rgba(255, 255, 255, 0.3); /* Set background color for the container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+    
+}
+.b2b-container {
+    max-width: 600px;
+    margin: 50px auto; /* Center the container */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+}
+
+form {
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* White color with 50% opacity */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
