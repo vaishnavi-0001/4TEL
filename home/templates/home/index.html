@@ -1,22 +1,23 @@
-{% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>4 TEL</title>
-    <link rel="stylesheet" href="{% static "CSS/styles.css" %}">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="TEL">
         <div class="timer-container">
             <div id="countdown" class="countdown"></div>
         </div>
-        <h1 class="tel-heading">4 T E L ' S<br>A U T O M A T I O N</h1>
-        <video autoplay loop muted plays-inline class="background-frontpage">
-            <source src="{% static "Images/front-page-video_akImI6Y6.mp4" %}" type="video/mp4">
+        <div class="logo-container">
+            <img src="image\logo-removebg-preview.png" class="logo">
+        </div>
+        <video autoplay loop muted playsinline class="background-frontpage">
+            <source src="image\front_page_video.mp4" type="video/mp4">
         </video>
+        
         <div class="sidebar">
             <div class="menu-toggle" onclick="toggleMenu()">
                 <div class="menu-bar"></div>
@@ -24,28 +25,24 @@
                 <div class="menu-bar"></div>
             </div>
             <ul class="sidebar-menu">
-                <li><a href="#">Project/Gallery</a></li>
-                <li><a href="book_now/">Book Now</a></li>
-                {% comment %} <li><a href="vehicle_detail.html">B2B Details</a></li> {% endcomment %}
+                <li><a href="Model_Gallery.html">Project/Gallery</a></li>
+                <li><a href="book_now.html">Book Now</a></li>
+                <li><a href="vehicle_detail.html">B2B Details</a></li>
             </ul>
         </div>
 
+        <nav>
+            <ul>
+                <li><a href="#">SEARCH</a></li>
+                <li><a href="#">COLLECTION</a></li>
+            </ul>
+        </nav>
 
-       <nav>
-        <img src="{% static "Images/logo-removebg-preview.png" %}" class="logo">
-        <ul>
-            
-            <li><a href="#">SEARCH</a></li>
-            <li><a href="#">COLLECTION</a></li>
-        </ul>
-       </nav>
-
-       <div class="content">
-        <h1></h1>
-        <a href="#">Explore</a>
-       </div>
+        <div class="content">
+            <h1></h1>
+            <a href="#">Explore</a>
+        </div>
     </div>
-    <script src = "{% static "JS/script.js" %}"></script>
-    
+    <script src="script.js"></script>
 </body>
 </html>
